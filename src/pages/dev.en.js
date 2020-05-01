@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Layout, SEO } from 'components';
-import BlogCard from '../components/Blog/BlogCard'
+import BlogCard from '../components/blog/BlogCard'
 import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
 
