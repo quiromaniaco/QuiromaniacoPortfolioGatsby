@@ -1,3 +1,6 @@
 import Welcome from './Welcome';
+import WelcomeEN from './Welcome.en';
 
-export default Welcome;
+export { Welcome, WelcomeEN };
+
+

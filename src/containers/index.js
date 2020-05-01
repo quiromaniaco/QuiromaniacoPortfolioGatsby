@@ -1,9 +1,9 @@
-import About from './about';
-import BlogPostList from './blog-post-list';
-import Welcome from './welcome';
+import { ContactES, ContactEN } from './contact';
+import { Welcome, WelcomeEN } from './welcome';
 
 export {
-  About,
-  BlogPostList,
+  ContactES,
+  ContactEN,
   Welcome,
+  WelcomeEN,
 };

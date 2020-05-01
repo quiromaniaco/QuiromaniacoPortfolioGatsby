@@ -1,7 +1,9 @@
 const content = {
-  tagline: 'Kick off your project using',
-  title: 'Gatsby Starter.',
-  subtitle: 'Featuring Redux, Material UI, Contentful & other stuff!',
+  tagline: 'Hola! Mi nombre es',
+  title: 'Manuel Quiroga',
+  subtitle: 'Administrador de empresas internacionales y desarrollador de software. Creativo, ambicioso y emprendedor. Me gusta programar y escribir sobre tecnología y negocios. Bienvenido a mi pagina personal!',
 };
 
 export default content;
+
+// 'Creativo, abicioso y emprendedor administrador de negocios internacionales y desarrollador de software'

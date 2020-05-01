@@ -4,9 +4,11 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter`,
-    description: `Gatsby Starter`,
-    author: `Polychronis Papadakis`,
+    title: `Manuel Quiroga`,
+    description: `Personal portfolio of Manuel Quiroga`,
+    author: `Manuel Quiroga`,
+    langs: ["es", "en"],
+    defaultLangKey: "es",
   },
   plugins: [
     `gatsby-plugin-flow`,
@@ -14,6 +16,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-emotion',
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -78,5 +81,29 @@ module.exports = {
         environment: process.env.CONTENTFUL_ENV,
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Source Code Pro\:100,300,400,400i,700`,
+        ],
+        display: 'swap'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'es',
+        useLangKeyLayout: false
+      }
+    },
+    {
+      resolve: "gatsby-source-dev",
+      options: {
+        // This is your username on Dev.to
+        username: 'geocine'
+      }
+    }
+    
   ],
 }
