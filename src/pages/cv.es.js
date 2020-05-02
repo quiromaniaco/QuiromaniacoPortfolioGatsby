@@ -64,11 +64,9 @@ const cvPage = () => (
         {/* <h2> Sobre Mi:</h2>
         <p>Me considero una persona energética, proactiva y amigable que siempre está buscando nuevos desafíos para superarse, entretenerse y divertirse.</p> */}
         <h2>Idiomas</h2>
-        <p className={'tags'}>#Espanol-Nativo</p>
-        <p className={'tags'}>#Ingles-Nativo</p>
-        <p className={'tags'}>#Aleman-A1</p>
+        <p className={'tags'}>#Espanol #Ingles #Aleman-A1</p>
         <h2>Conocimientos Técnicos:</h2>
-        <p className={'tags'}>#Python - #Django - #Javascript - #React.js - #Gatsby.js - #Node.js - #React-Native - CSS</p>
+        <p className={'tags'}>#Python #Django #Javascript #React.js #Gatsby.js #Node.js #React-Native #CSS</p>
         <h2>Otras Experiencias/Logros:</h2>
         <p><a href="https://collegereadiness.collegeboard.org/sat" target="_blank">SAT - Scholastic Aptitude Test</a></p>
         <p><a href="https://www.unsw.edu.au/" target="_blank">University of New South Walles - UNSW Sydney - Advanced English course</a></p>
