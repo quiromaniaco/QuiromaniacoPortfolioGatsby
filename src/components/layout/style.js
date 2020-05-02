@@ -19,7 +19,7 @@ const styles = ({ app, breakpoints, typography }) => ({
     justifyContent: 'space-between',
     margin: '0 auto',
     minHeight: '100%',
-    padding: `10px`,
+    padding: `0px`,
     transition: 'filter .5s, opacity .5s',
     boxSizing: 'border-box',
   },
