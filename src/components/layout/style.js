@@ -9,10 +9,10 @@ const styles = ({ app, breakpoints, typography }) => ({
   container: {
     minHeight: '100vh',
   },
-  scrollFix: {
-    marginRight: '-17px !important',
-    marginBottom: '-17px !important',
-  },
+  // scrollFix: {
+  //   marginRight: '-17px !important',
+  //   marginBottom: '-17px !important',
+  // },
   pageContainer: {
     display: 'flex',
     flexDirection: 'column',
