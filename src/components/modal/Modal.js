@@ -18,13 +18,7 @@ const Modal = ({ classes, children, fullScreen, ...rest }: Props) => (
           fullScreen ? classes.fullScreenContainer : classes.centeredContainer
         }>
         <div className={classes.content}>
-          <Scrollbars
-            autoHide
-            autoHideTimeout={1000}
-            autoHideDuration={200}
-            className={classes.scrollContainer}>
-            {children}
-          </Scrollbars>
+         
         </div>
       </div>
     </Fade>
