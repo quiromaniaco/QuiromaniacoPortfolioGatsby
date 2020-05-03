@@ -18,6 +18,8 @@ const styles = ({ palette, typography }) => ({
     padding: 10,
     position: 'fixed',
     zIndex: 10,
+    mixBlendMode: 'difference',
+    color: 'white',
     
   },
 });

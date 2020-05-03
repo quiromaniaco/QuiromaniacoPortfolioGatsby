@@ -3,7 +3,7 @@ const styles = ({ app, typography }) => ({
     // display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    // margin: `${typography.pxToRem(8)} auto 0`,
+    margin: `0 auto 0`,
     maxWidth: app.maxWidth,
     width: '100%',
     height: '100%',

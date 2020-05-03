@@ -29,7 +29,7 @@ if (langKey === 'es') {
   ];
 } else {
   options = [
-    { to: 'en/', text: 'options' },
+    { to: 'en/', text: 'Profile' },
     { to: 'en/cv/', text: 'Resume' },
     { to: 'en/blog/', text: 'Blog' },
     // { to: 'en/dev/', text: 'Dev Posts' },

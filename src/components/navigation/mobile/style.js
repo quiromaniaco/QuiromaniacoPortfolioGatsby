@@ -9,13 +9,16 @@ const styles = ({ palette, typography }) => ({
     right: typography.pxToRem(-1),
     textAlign: 'right',
     padding: `${typography.pxToRem(16)} ${typography.pxToRem(8)}`,
+    
   },
   navLink: {
     border: 'none',
     display: 'inline-block',
     padding: `${typography.pxToRem(8)} 0`,
     textDecoration: 'none',
-    color: palette.text.secondary,
+    // mixBblendMmode: 'multiply',
+    color: 'white',
+    fontWeight: '100',
   },
   navLinkActive: {
     fontWeight: 500,
