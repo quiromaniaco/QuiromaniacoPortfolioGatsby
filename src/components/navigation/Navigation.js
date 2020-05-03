@@ -18,17 +18,26 @@ const Navigation = ({ classes, width }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={classes.container}>
-      {isMobileView(width) ? (
+    <div>
+
+  
+    {isMobileView(width) ? (
+      <div className={classes.containerMobile}>
         <MobileNavigation
-          options={options}
-          open={open}
-          onClick={() => setOpen(!open)}
-        />
-      ) : (
-        <MainNavigation options={options} />
-      )}
+        options={options}
+        open={open}
+        onClick={() => setOpen(!open)}
+      />
+      </div>
+    ) : (
+      <div className={classes.container}>
+      <MainNavigation options={options} />
+      </div>
+    )}
+  
+
     </div>
+    
   );
 };
 

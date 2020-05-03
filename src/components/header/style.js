@@ -31,8 +31,8 @@ const styles = ({ app, typography }) => ({
     textDecoration: 'none',
   },
   navigationMobile: {
-    // float: 'right',
-    position: 'fixed',
+    float: 'right',
+    position: 'relative',
   },
 });
 
