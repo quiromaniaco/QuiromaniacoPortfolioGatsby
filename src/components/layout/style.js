@@ -15,10 +15,6 @@ const styles = ({ app, breakpoints, typography }) => ({
     bottom: '0px',
     overflow: 'scroll',
   },
-  // scrollFix: {
-  //   marginRight: '-17px !important',
-  //   marginBottom: '-17px !important',
-  // },
   pageContainer: {
     display: 'flex',
     flexDirection: 'column',
