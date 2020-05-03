@@ -16,10 +16,10 @@ const Header = ({ classes, width }: Props) => (
   <div>
 
       {isMobileView(width) ? (
-        <header className={classes.container}>
-          <Link to='/' className={classes.logo}>
+        <header className={classes.containerMobile}>
+          <Link to='/' className={classes.logoMobile}>
           </Link>
-          <div className={classes.navigation}>
+          <div className={classes.navigationMobile}>
             <Navigation />
           </div>
         </header>
