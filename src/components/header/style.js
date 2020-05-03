@@ -1,9 +1,9 @@
 const styles = ({ app, typography }) => ({
   container: {
-    display: 'flex',
+    // display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    margin: `0`,
+    margin: `${typography.pxToRem(8)} auto 0`,
     maxWidth: app.maxWidth,
     width: '100%',
     height: '100%',
@@ -13,10 +13,10 @@ const styles = ({ app, typography }) => ({
     position: 'relative',
   },
   containerMobile: {
-    display: 'flex',
+    // display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    margin: `0`,
+    margin: `${typography.pxToRem(8)} auto 0`,
     maxWidth: app.maxWidth,
     width: '100%',
     height: '100%',
