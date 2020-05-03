@@ -8,6 +8,12 @@ const styles = ({ app, breakpoints, typography }) => ({
   },
   container: {
     minHeight: '100vh',
+    position: 'absolute',
+    top: '0px',
+    left: '0px',
+    right: '0px',
+    bottom: '0px',
+    overflow: 'scroll',
   },
   // scrollFix: {
   //   marginRight: '-17px !important',

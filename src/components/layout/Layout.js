@@ -17,11 +17,8 @@ type Props = {
 };
 
 const Layout = ({ classes, children, noBackground }: Props) => (
-  <Scrollbars
-    autoHide
-    autoHideTimeout={1000}
-    autoHideDuration={200}
-    renderView={props => <div {...props} className={classes.scrollFix} />}
+  <div
+    
     className={classes.container}>
     <div
       className={classNames(
@@ -33,7 +30,7 @@ const Layout = ({ classes, children, noBackground }: Props) => (
         <main className={classes.content}>{children}</main>
       </Fade>
     </div>
-  </Scrollbars>
+  </div>
 );
 
 export default withStyles(styles)(Layout);
