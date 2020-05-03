@@ -14,7 +14,7 @@ const styles = ({ palette, typography }) => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     listStyle: 'none',
-    margin: 0,
+    right: 20,
     padding: 10,
     position: 'fixed',
     zIndex: 10,
