@@ -15,12 +15,12 @@ type Props = {
 
 export default ({ classes, width }: Props) => (
   <>  
-       <div style={{ paddingBottom:15, paddingLeft:'5%',}}>
+       <div style={{  paddingLeft:'5%',}}>
         <Fade in timeout={1000}>
-          <Typography variant='h1' color='textPrimary'>
-            {title}
-          </Typography>
-        </Fade>
+          <h1 style={{ fontSize:'2.5rem', color:'#17252A', fontFamily:'Roboto', fontWeight:'800', letterSpacing: '-0.01562em', lineHeight:'1.1', marginBlockStart:'1rem', marginBlockEnd:'0'}}>
+              {title} 
+          </h1> 
+        </Fade> 
       </div>
       {/* {isMobileView(width) ? (
         <div></div>
