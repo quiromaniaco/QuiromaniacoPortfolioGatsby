@@ -18,9 +18,11 @@ const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
     
     {open && (
       <div>
-          <svg className={classes.cover} onClick={onClick}>
-            
-            
+          <svg className={classes.cover} onClick={onClick}></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+              <filter id="myblurfilter" width="110%" height="100%">
+  	              <feGaussianBlur stdDeviation="2" result="blur" />
+              </filter>
           </svg>
           <div className={classes.menuContainer}>
               <Link className={classes.navLink} onClick={onClick}>

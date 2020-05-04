@@ -22,9 +22,9 @@ const styles = ({ palette, typography }) => ({
     top: typography.pxToRem(16),
     right: typography.pxToRem(-1),
     textAlign: 'right',
-    margin: `${typography.pxToRem(16)} 0`,
+    margin: `${typography.pxToRem(-40)} 0`,
     // backgroundColor: '#161619',
-    padding: '1rem 1rem',
+    padding: '-1rem 1rem',
   },
   navLink: {
     border: 'none',
