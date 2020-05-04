@@ -11,7 +11,7 @@ const styles = ({ palette, typography }) => ({
     left:0,
     width: '100%',
     height: '100%',
-    background:'#8a8a8a',
+    background:'#848484',
     // content: '',
     // filter: 'blur(10px)',
     // boxShadow: 'inset 0 0 0 0px rgba(255,255,255,0.3)',
@@ -33,7 +33,8 @@ const styles = ({ palette, typography }) => ({
     textDecoration: 'none',
     color: 'black',
     fontWeight: '500',
-    fontSize: '5rem'
+    fontSize: '5rem',
+    cursor: 'pointer',
   },
   navLinkActive: {
     fontWeight: '500',
