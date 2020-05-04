@@ -12,7 +12,11 @@ const styles = ({ palette, typography }) => ({
     width: '100%',
     height: '100%',
     background:'#8a8a8a',
+    // content: '',
+    // filter: 'blur(10px)',
+    // boxShadow: 'inset 0 0 0 0px rgba(255,255,255,0.3)',
   },
+
   menuContainer: {
     position: 'absolute',
     top: typography.pxToRem(16),
@@ -28,7 +32,7 @@ const styles = ({ palette, typography }) => ({
     padding: `${typography.pxToRem(8)} 0`,
     textDecoration: 'none',
     color: 'black',
-    fontWeight: '300',
+    fontWeight: '500',
     fontSize: '5rem'
   },
   navLinkActive: {

@@ -18,9 +18,10 @@ const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
     
     {open && (
       <div>
-          <div className={classes.cover} onClick={onClick}>
-
-          </div>
+          <svg className={classes.cover} onClick={onClick}>
+            
+            
+          </svg>
           <div className={classes.menuContainer}>
               <Link className={classes.navLink} onClick={onClick}>
                 x
