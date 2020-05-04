@@ -2,10 +2,11 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
 import { compose, isMobileView } from 'utils';
-
-
 import content from './content';
+import contentLinks from './contactLinks'
+import { LinkList } from 'components';
 
+const { links } = contentLinks;
 const { tagline, title, subtitle } = content;
 
 type Props = {
@@ -28,6 +29,7 @@ export default ({ classes, width }: Props) => (
             {subtitle}
           </Typography>
         </Fade>
+        <LinkList links={links} />
       </div>  
   </>
 )
