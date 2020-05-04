@@ -15,7 +15,7 @@ export default () => (
      </h1> 
    </Fade> 
  </div>
- <div style={{ paddingBottom:15, paddingLeft:'5%',}}>
+ <div style={{ paddingBottom:'10rem', paddingLeft:'5%',}}>
    <Fade in timeout={1300}>
      <Typography variant='h3' color='textPrimary'>
        {subtitle}
