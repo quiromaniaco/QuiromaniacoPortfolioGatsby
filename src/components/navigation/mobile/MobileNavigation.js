@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { withStyles } from '@material-ui/styles';
 import { FaBars } from 'react-icons/fa';
-
+import overlayStyles from "./overlay.module.css"
 import styles from './style';
 
 type Props = {
