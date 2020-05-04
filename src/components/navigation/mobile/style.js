@@ -39,12 +39,13 @@ const styles = ({ palette, typography }) => ({
   navLinkBlack: {
     border: 'none',
     display: 'inline-block',
-    padding: `${typography.pxToRem(8)} 0`,
+    // padding: `${typography.pxToRem(8)} 0`,
     textDecoration: 'none',
     color: '#ffffff',
     fontWeight: '500',
     fontSize: '5rem',
     cursor: 'pointer',
+    marginTop: '-1rem',
   },
   navLinkActive: {
     fontWeight: '500',

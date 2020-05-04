@@ -15,7 +15,7 @@ const styles = ({ palette, typography }) => ({
     justifyContent: 'space-between',
     listStyle: 'none',
     right: 20,
-    padding: 10,
+    // padding: 10,
     position: 'fixed',
     zIndex: 10,
     mixBlendMode: 'exclusion',
