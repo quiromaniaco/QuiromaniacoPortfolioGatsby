@@ -35,26 +35,7 @@ const IndexPage = ({data}) => (
 );
 
 
-// const IndexPage = ({data, classes}: Props) => (
-//   <Layout>
-//     <SEO title='Perfil' />
-//     <div>
-//       <div className={classNames(classes.flexRow)}>
-//         <div className={classNames(classes.flexImage)}>
-//           <Img fixed={data.file.childImageSharp.fixed} /> 
-//         </div>
-//         <div className={classNames(classes.flexColumn)}>
-//           <Welcome /> 
-//         </div>
-//       </div>
-//     </div>
-    
-      
-    
-   
-    
-//   </Layout>
-// );
+
 
 
 
@@ -72,14 +53,3 @@ export const query = graphql`
     }
   }
 `
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "profile_quiromaniaco.jpg" }) {
-//       childImageSharp {
-//         fixed(width: 100) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `
