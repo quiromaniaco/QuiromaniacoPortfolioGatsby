@@ -22,6 +22,9 @@ const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
 
           </div>
           <div className={classes.menuContainer}>
+              <Link className={classes.navLink} onClick={onClick}>
+                x
+              </Link>
               {options.map((link, i) => (
                 <div key={i}>
                   <Link
