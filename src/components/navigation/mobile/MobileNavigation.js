@@ -14,8 +14,10 @@ type Props = {
 
 const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
   <>
-    <FaBars className={classes.menuIcon} onClick={onClick} />
-    
+    {/* <FaBars className={classes.menuIcon} onClick={onClick} /> */}
+              <div className={classes.navLinkBlack} onClick={onClick}>
+                x
+              </div>
     {open && (
       <div>
           <svg className={classes.cover} onClick={onClick} ></svg>

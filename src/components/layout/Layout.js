@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
-import { Scrollbars } from 'react-custom-scrollbars';
 import Fade from '@material-ui/core/Fade';
 import classNames from 'classnames';
 
