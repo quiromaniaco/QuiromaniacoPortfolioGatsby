@@ -8,13 +8,14 @@ const { tagline, title, subtitle } = contentEN;
 
 export default () => (
   <>
+      <div style={{ paddingBottom:15, paddingLeft:'5%',}}>
       <Fade in timeout={1000}>
         <Typography variant='h1' color='textPrimary'>
           {title}
         </Typography>
       </Fade>
-     
-      <div style={{marginTop:-10, paddingBottom:15, paddingLeft:'5%',}}>
+      </div>
+      <div style={{ paddingBottom:15, paddingLeft:'5%',}}>
         <Fade in timeout={1300}>
           <Typography variant='h3' color='textPrimary'>
             {subtitle}
