@@ -19,7 +19,7 @@ const styles = ({ palette, typography }) => ({
     position: 'fixed',
     zIndex: 10,
     mixBlendMode: 'difference',
-    color: 'white',
+    // color: 'white',
     
   },
 });

@@ -15,20 +15,27 @@ type Props = {
 const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
   <>
     <FaBars className={classes.menuIcon} onClick={onClick} />
+    
     {open && (
-      <div className={classes.menuContainer}>
-        {options.map((link, i) => (
-          <div key={i}>
-            <Link
-              to={link.to}
-              className={classes.navLink}
-              activeClassName={classes.navLinkActive}
-              exact={'true'}>
-              <span>{link.text}</span>
-            </Link>
+      <div>
+          <div className={classes.cover} onClick={onClick}>
+
           </div>
-        ))}
+          <div className={classes.menuContainer}>
+              {options.map((link, i) => (
+                <div key={i}>
+                  <Link
+                    to={link.to}
+                    className={classes.navLink}
+                    activeClassName={classes.navLinkActive}
+                    exact={'true'}>
+                    <span>{link.text}</span>
+                  </Link>
+                </div>
+              ))}
+          </div>
       </div>
+      
     )}
   </>
 );
