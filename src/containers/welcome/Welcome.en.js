@@ -13,9 +13,7 @@ export default () => (
           {title}
         </Typography>
       </Fade>
-      <Fade in timeout={1300}>
-        <Typography variant='h3'>{'async'}<span style={{paddingLeft:'3%'}}>{''}</span> {'{'}</Typography>
-      </Fade>
+     
       <div style={{marginTop:-10, paddingBottom:15, paddingLeft:'5%',}}>
         <Fade in timeout={1300}>
           <Typography variant='h3' color='textPrimary'>
@@ -23,9 +21,7 @@ export default () => (
           </Typography>
         </Fade>
       </div>
-      <Fade in timeout={1300}>
-        <Typography variant='h3'>{'}'}</Typography>
-      </Fade>
+    
   </>
 )
 
