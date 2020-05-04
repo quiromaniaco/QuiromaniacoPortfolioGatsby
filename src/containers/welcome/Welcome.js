@@ -21,18 +21,13 @@ export default ({ classes, width }: Props) => (
         </Typography>
       </Fade>
 
-      {isMobileView(width) ? (
+      {/* {isMobileView(width) ? (
         <div></div>
       ) : (
         <Fade in timeout={1300}>
           <Typography variant='h3'>{'async'}<span style={{paddingLeft:'3%'}}>{''}</span> {'{'}</Typography>
         </Fade>
-      )}
-
-
-      
-
-
+      )} */}
 
       <div style={{marginTop:-10, paddingBottom:15, paddingLeft:'5%',}}>
         <Fade in timeout={1300}>
@@ -42,15 +37,13 @@ export default ({ classes, width }: Props) => (
         </Fade>
       </div>
 
-
-
-      {isMobileView(width) ? (
+      {/* {isMobileView(width) ? (
         <div></div>
       ) : (
         <Fade in timeout={1300}>
           <Typography variant='h3'>{'}'}</Typography>
         </Fade>
-      )}
+      )} */}
 
 
      
