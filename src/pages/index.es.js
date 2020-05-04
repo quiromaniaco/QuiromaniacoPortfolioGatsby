@@ -6,10 +6,14 @@ import { Welcome } from 'containers';
 import styles from '../styles/flexIndex';
 import { withStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
+import { isMobileView } from 'utils';
 
+type Props = {
+  classes: Object,
+  width: string,
+};
 
-
-const IndexPage = ({data}) => (
+const IndexPage = ({data, classes, width}: Props) => (
   <Layout>
     <SEO title='Perfil' />
     <Grid container alignContent={'flex-start'} direction={'row'}  >
@@ -25,7 +29,12 @@ const IndexPage = ({data}) => (
       
       <Grid xs={12} sm={7} >
         <Grid container direction={'column'} justify={"center"} >
-          <Welcome /> 
+            {isMobileView(width) ? (
+              <Welcome /> 
+            ) : (
+              <Welcome /> 
+            )}
+          
         </Grid>
       </Grid>
         
