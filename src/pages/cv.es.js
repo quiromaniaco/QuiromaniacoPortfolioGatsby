@@ -46,7 +46,7 @@ const CurriculumData = styled.div`
     h3 {
       margin-top: 10px;
       margin-bottom: 10px;
-      font-size: 2rem;
+      font-size: 1rem;
       font-weight: 300;
       font-family: 'Source Code Pro';
       line-height: 1.5;
