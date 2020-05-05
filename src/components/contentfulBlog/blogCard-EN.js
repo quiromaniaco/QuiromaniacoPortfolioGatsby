@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
 
 const BlogCardStyle = styled.div`
-  margin: -20px 0;
+  margin: 5rem 0;
   h1 {
     margin: 0px;
     font-size: 1.8rem;
@@ -56,6 +56,7 @@ const BlogCardStyle = styled.div`
     }
   }
   @media only screen and (max-width: 420px) {
+    margin: 0rem 0;
     h1 {
       margin: 0px;
       font-size: 1.4rem;
@@ -76,7 +77,7 @@ const BlogCardStyle = styled.div`
 
 const ContentBlogCardStyle = styled.div`
   letter-spacing: 0rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   @media only screen and (max-width: 1000px) {
     padding-left: 5%;
   padding-right: 5%;
