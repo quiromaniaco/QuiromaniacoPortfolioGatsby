@@ -77,7 +77,8 @@ const BlogCardStyle = styled.div`
 
 const ContentBlogCardStyle = styled.div`
   padding-left: 5%;
-  padding-right: 5%
+  padding-right: 5%;
+  letter-spacing: 0rem;
 `
 
 
