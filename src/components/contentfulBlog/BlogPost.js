@@ -70,7 +70,7 @@ letter-spacing: 0rem;
   }
   img {
     max-width: 100%;
-    padding-top: 1.5em
+    // padding-top: 1.5em
   }
   iframe {
     margin: 0 auto;
@@ -93,6 +93,12 @@ const MobileContainer = styled.div`
   @media only screen and (max-width: 1000px) {
     padding-left: 5%;
     padding-right: 5%;
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `
 
