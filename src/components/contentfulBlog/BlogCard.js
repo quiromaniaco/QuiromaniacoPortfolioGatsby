@@ -10,18 +10,18 @@ import Fade from '@material-ui/core/Fade';
 
 const BlogCardStyle = styled.div`
   margin: -20px 0;
-  h3 {
+  h1 {
     margin: 0px;
     font-size: 1.8rem;
     line-height: 32px;
   }
-  h4 {
+  p.postDescription {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.25rem;
-    font-weight: 300;
     font-family: 'Source Code Pro';
     line-height: 1.5;
+    color: #0a0a0a;
   }
   a {
     color: #0a0a0a;
@@ -56,6 +56,22 @@ const BlogCardStyle = styled.div`
       font-weight: 100;
     }
   }
+  @media only screen and (max-width: 420px) {
+    h1 {
+      margin: 0px;
+      font-size: 1.4rem;
+      line-height: 32px;
+      color: #0a0a0a;
+    }
+    p.postDescription {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      font-family: 'Source Code Pro';
+      line-height: 1.5;
+      color: #0a0a0a;
+    }
+  }
 `
 
 const ContentBlogCardStyle = styled.div`
@@ -88,12 +104,12 @@ const BlogCard = ({ post }) => (
       <ContentBlogCardStyle>
         <Link to={`/es/blog/${post.slug}`}>
           <div className="content" style={{paddingTop: 10}}>
-            <h3>{post.title} | <span style={{fontWeight:300, fontSize: '1.5rem'}}>{post.publishDate}</span></h3>
+            <h1>{post.title} | <span style={{fontWeight:300, fontSize: '1.5rem'}}>{post.publishDate}</span></h1>
           </div>
         </Link>
-        <Typography variant='h4' color='textPrimary'>
+        <p className="postDescription">
           {post.description.childMarkdownRemark.rawMarkdownBody} <Link to={`/es/blog/${post.slug}`}><span>Read more...</span></Link>
-        </Typography>
+        </p>
       </ContentBlogCardStyle>
       
     </BlogCardStyle>
