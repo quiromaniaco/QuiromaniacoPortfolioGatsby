@@ -92,7 +92,7 @@ const BlogCard = ({ post }) => (
           </div>
         </Link>
         <Typography variant='h4' color='textPrimary'>
-          {post.description.childMarkdownRemark.rawMarkdownBody} <Link to={`/en/blog/${post.slug}`}><span>Read more...</span></Link>
+          {post.description.childMarkdownRemark.rawMarkdownBody} <Link to={`/es/blog/${post.slug}`}><span>Read more...</span></Link>
         </Typography>
       </ContentBlogCardStyle>
       
