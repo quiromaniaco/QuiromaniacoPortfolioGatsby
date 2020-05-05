@@ -47,6 +47,7 @@ const MobileThumbnail = styled.div`
 
 const ProjectCard = ({ post }) => (
   
+    <Fade in timeout={1000}> 
        <Grid alignContent={'stretch'} spacing={5} xs={12} sm={6}>
            <a href={post.link} target="_blank">
            <CardStyled>
@@ -59,6 +60,7 @@ const ProjectCard = ({ post }) => (
            </CardStyled>
            </a>
         </Grid>  
+    </Fade>
 )
 
 export default ProjectCard;
