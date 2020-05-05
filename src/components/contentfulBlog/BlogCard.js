@@ -76,10 +76,12 @@ const BlogCardStyle = styled.div`
 `
 
 const ContentBlogCardStyle = styled.div`
-  padding-left: 5%;
-  padding-right: 5%;
   letter-spacing: 0rem;
   margin-bottom: 10rem;
+  @media only screen and (max-width: 1000px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 `
 
 

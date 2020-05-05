@@ -10,7 +10,7 @@ const CurriculumData = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.25rem;
-    font-weight: 325;
+    font-weight: 300;
     font-family: 'Source Code Pro';
     line-height: 1.5;
   }
@@ -18,7 +18,7 @@ const CurriculumData = styled.div`
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 300;
     font-family: 'Source Code Pro';
     line-height: 1.5;
   }
