@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
-
 import styled from '@emotion/styled'
-
 import Img from "gatsby-image/withIEPolyfill"
 import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
