@@ -10,6 +10,8 @@ import { Grid } from '@material-ui/core';
 
 
 const CardStyled = styled.div`
+    margin-bottom: 5rem;
+    letter-spacing: 0rem;
     @media (min-width: 650px) {
         margin: 40px;
     }
@@ -22,7 +24,7 @@ const CardStyled = styled.div`
         margin-top: 5px;
         margin-bottom: 10px;
         font-size: 1.25rem;
-        font-weight: 500;
+        font-weight: 400;
         font-family: 'Source Code Pro';
         line-height: 1.5;
     }
@@ -37,7 +39,12 @@ const CardStyled = styled.div`
     }
 
 `
-
+const MobileThumbnail = styled.div`
+    @media only screen and (max-width: 600px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+`
 
 
 const ProjectCard = ({ post }) => (
@@ -45,10 +52,12 @@ const ProjectCard = ({ post }) => (
        <Grid alignContent={'stretch'} spacing={5} xs={12} sm={6}>
            <a href={post.link} target="_blank">
            <CardStyled>
-           <Img fluid={post.image.fluid} style={{width: '100%', height:500}}  /> 
-            <h3>{post.title}</h3>
-            <p className={'tags'}>{post.tags}</p>
-            <p className={'description'}>{post.description.description}</p>
+            <Img fluid={post.image.fluid} style={{width: '100%', height:500}}  /> 
+            <MobileThumbnail>
+                    <h3>{post.title}</h3>
+                    <p className={'tags'}>{post.tags}</p>
+                    <p className={'description'}>{post.description.description}</p>
+            </MobileThumbnail>
            </CardStyled>
            </a>
         </Grid>  

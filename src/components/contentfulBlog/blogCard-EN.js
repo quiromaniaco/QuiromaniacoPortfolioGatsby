@@ -108,7 +108,7 @@ const BlogCardEN = ({ post }) => (
       </Link>
       <ContentBlogCardStyle>
         <Link to={`/en/blog/${post.slug}`}>
-          <div className="content" style={{paddingTop: 10}}>
+          <div className="content" style={{paddingTop: '1rem'}}>
             <h1>{post.title} | <span style={{fontWeight:300, fontSize: '1.5rem'}}>{post.publishDate}</span></h1>
           </div>
         </Link>
