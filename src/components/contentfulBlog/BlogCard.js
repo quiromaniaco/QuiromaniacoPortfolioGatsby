@@ -58,6 +58,12 @@ const BlogCardStyle = styled.div`
   }
 `
 
+const ContentBlogCardStyle = styled.div`
+  padding-left: 5%;
+  padding-right: 5%
+`
+
+
 var truncate = function (elem, limit) {
 
 	if (!elem || !limit) return;
@@ -75,17 +81,20 @@ const BlogCard = ({ post }) => (
     <BlogCardStyle>
       
       <Link to={`/es/blog/${post.slug}`}>
-      <Fade in timeout={1000}>
-        <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
-      </Fade>
-        <div className="content" style={{paddingTop: 10}}>
-          <h3>{post.title} | <span style={{fontWeight:300, fontSize: '1.5rem'}}>{post.publishDate}</span></h3>
-        </div>
+        <Fade in timeout={1000}>
+          <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
+        </Fade>
       </Link>
-      <Typography variant='h4' color='textPrimary'>
-            {post.description.childMarkdownRemark.rawMarkdownBody} <Link to={`/en/blog/${post.slug}`}><span>Read more...</span></Link>
-      </Typography>
-
+      <ContentBlogCardStyle>
+        <Link to={`/es/blog/${post.slug}`}>
+          <div className="content" style={{paddingTop: 10}}>
+            <h3>{post.title} | <span style={{fontWeight:300, fontSize: '1.5rem'}}>{post.publishDate}</span></h3>
+          </div>
+        </Link>
+        <Typography variant='h4' color='textPrimary'>
+          {post.description.childMarkdownRemark.rawMarkdownBody} <Link to={`/en/blog/${post.slug}`}><span>Read more...</span></Link>
+        </Typography>
+      </ContentBlogCardStyle>
       
     </BlogCardStyle>
   </Card>
