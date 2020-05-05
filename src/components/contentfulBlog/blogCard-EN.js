@@ -63,12 +63,13 @@ const BlogCardStyle = styled.div`
       color: #0a0a0a;
     }
     p.postDescription {
-      margin-top: 10px;
+      margin-top: 0px;
       margin-bottom: 10px;
       font-size: 1rem;
       font-family: 'Source Code Pro';
       line-height: 1.5;
       color: #0a0a0a;
+      letter-spacing: -1px;
     }
   }
 `
