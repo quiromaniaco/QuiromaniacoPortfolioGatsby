@@ -11,70 +11,71 @@ import { getUserLangKey } from "ptz-i18n"
 import Fade from '@material-ui/core/Fade';
 
 const BlogPostStyle = styled.div`
+letter-spacing: 0rem;
   h1.title {
     padding-top: 15px;
     margin: 0;
-    font-size: calc(1.85vw + 25px);
-    line-height: calc(1.85vw + 35px);
+    font-size: 2rem;
+    line-height: 1.5;
     font-weight: 800;
     a {
       text-decoration: none;
       color: black;
     }
   }
-
-  div.body {
-    p {
-      font-size: 1.25em;
-      letter-spacing: 0.01071em;
-      font-weight: 300;
-      line-height: 1.25
-    }
-    h1 {
-      font-size: 1.85em;
-      line-height: 1.14em;
-      font-weight: 400;
-    }
-    h2 {
-      font-size: 1.8em;
-      padding-top: 0.5em;
-    }
-    h3 {
-      font-size: 1.5em;
-      padding-top: 0.3em;
-    }
-    h4 {
-      font-size: 1.3em;
-      padding-top: 0.2em;
-    }
-    li {
-      font-size: 1.2em;
-      line-height: 1.14em;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em
-    }
-    h5 {
-      font-family: 'Source Code Pro';
-    }
-    code {
-      font-size: 1.5em;
-    }
-    div.highlight pre {
-      padding: 5% 5% 5% 85px;
-      margin: 20px -85px;
-      overflow-wrap: normal;
-      overflow-x: auto;
-    }
-    img {
-      max-width: 100%;
-      padding-top: 1.5em
-    }
-    iframe {
-      margin: 0 auto;
-      display: block;
-    }
+  p {
+    font-size: 1.25em;
+    font-family: 'Source Code Pro';
+    letter-spacing: 0rem;
+    font-weight: 300;
+    line-height: 1.25
   }
-
+  h1 {
+    font-size: 1.85em;
+    line-height: 1.14em;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.8em;
+    padding-top: 0.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+    padding-top: 0.3em;
+    margin: 0;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.3em;
+    padding-top: 0.2em;
+  }
+  li {
+    font-size: 1.2em;
+    line-height: 1.14em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em
+  }
+  h5 {
+    font-family: 'Source Code Pro';
+  }
+  code {
+    font-size: 1.5em;
+  }
+  div.highlight pre {
+    padding: 5% 5% 5% 85px;
+    margin: 20px -85px;
+    overflow-wrap: normal;
+    overflow-x: auto;
+  }
+  img {
+    max-width: 100%;
+    padding-top: 1.5em
+  }
+  iframe {
+    margin: 0 auto;
+    display: block;
+  }
   @media only screen and (max-width: 420px) {
     div.body {
       div.highlight pre {
@@ -87,6 +88,14 @@ const BlogPostStyle = styled.div`
     }
   }
 `
+
+const MobileContainer = styled.div`
+  @media only screen and (max-width: 1000px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+`
+
 
 const BlogPost = ({ post }) => {
   const removeWrappers = html => {
@@ -115,11 +124,13 @@ const BlogPost = ({ post }) => {
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
           </Fade>
-          <h1 className="title">
-            <a href={`/${post.slug}`}>{post.title}</a>
-          </h1>
-          <h3 style={{fontFamily: 'Source Code Pro'}}><span style={{fontWeight: 300}}>Publicado el </span>{post.publishDate}<span style={{fontWeight: 300}}> por </span>Manuel Quiroga</h3>
-          <div className="body">{Content}</div>
+          <MobileContainer>
+            <h1 className="title">
+              <a href={`/${post.slug}`}>{post.title}</a>
+            </h1>
+            <h3><span>Publicado el </span>{post.publishDate}<span> por </span>Manuel Quiroga</h3>
+            <div className="body">{Content}</div>
+          </MobileContainer>
         </BlogPostStyle>
       </Card>
     )
@@ -130,11 +141,13 @@ const BlogPost = ({ post }) => {
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
           </Fade>
-          <h1 className="title">
-            <a href={`/${post.slug}`}>{post.title}</a>
-          </h1>
-          <h3 style={{fontFamily: 'Source Code Pro'}}><span style={{fontWeight: 300}}>Published on </span>{post.publishDate}<span style={{fontWeight: 300}}> by </span>Manuel Quiroga</h3>
-          <div className="body">{Content}</div>
+          <MobileContainer>
+            <h1 className="title">
+              <a href={`/${post.slug}`}>{post.title}</a>
+            </h1>
+            <h3 style={{fontFamily: 'Source Code Pro'}}><span style={{fontWeight: 300}}>Published on </span>{post.publishDate}<span style={{fontWeight: 300}}> by </span>Manuel Quiroga</h3>
+            <div className="body">{Content}</div>
+          </MobileContainer>
         </BlogPostStyle>
       </Card>
     )
