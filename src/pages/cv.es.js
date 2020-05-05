@@ -54,7 +54,7 @@ const MobileContainer = styled.div`
     h3 {
       margin-top: 10px;
       margin-bottom: 10px;
-      font-size: 0.8rem;
+      font-size: 0.5rem;
       font-weight: 300;
       font-family: 'Source Code Pro';
       line-height: 1.5;
@@ -62,7 +62,7 @@ const MobileContainer = styled.div`
     h2 {
       margin-top: 30px;
       margin-bottom: 10px;
-      font-size: 0.8rem;
+      font-size: 0.5rem;
       font-weight: 300;
       font-family: 'Source Code Pro';
       line-height: 1.5;
@@ -70,7 +70,7 @@ const MobileContainer = styled.div`
     p {
       margin-top: 10px;
       margin-bottom: 10px;
-      font-size: 0.8rem;
+      font-size: 0.5rem;
       font-weight: 325;
       font-family: 'Source Code Pro';
       line-height: 1.5;
@@ -82,7 +82,7 @@ const MobileContainer = styled.div`
     p.tags {
       margin-top: 5px;
       margin-bottom: 10px;
-      font-size: 0.8rem;
+      font-size: 0.5rem;
       font-weight: 500;
       font-family: 'Source Code Pro';
       line-height: 1.5;
