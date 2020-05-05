@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
 
 const BlogCardStyle = styled.div`
-  margin: 5rem 0;
+margin-bottom: 5rem;
   h1 {
     margin: 0px;
     font-size: 1.8rem;
