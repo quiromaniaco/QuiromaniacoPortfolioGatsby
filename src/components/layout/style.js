@@ -13,7 +13,7 @@ const styles = ({ app, breakpoints, typography }) => ({
     left: '0px',
     right: '0px',
     bottom: '0px',
-    overflow: 'scroll',
+    // overflow: 'scroll',
   },
   pageContainer: {
     display: 'flex',
