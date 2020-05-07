@@ -10,7 +10,7 @@ const Post = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet title={`${post.title} | Blog`} />
+      {/* <Helmet title={`${post.title} | Blog`} /> */}
       <BlogPost post={post} />
     </Layout>
   )
@@ -26,6 +26,11 @@ export const pageQuery = graphql`
             publishDate
             title
             slug
+            description {
+              childMarkdownRemark {
+                rawMarkdownBody
+              }
+            }
             body {
                 childMarkdownRemark {
                   html

@@ -1,17 +1,3 @@
-// import React from 'react';
-
-// import { Layout, SEO } from 'components';
-// import { Welcome } from 'containers';
-
-// const IndexPage = () => (
-//   <Layout>
-//     <SEO title='Perfil' />
-//     <Welcome />
-//   </Layout>
-// );
-
-// export default IndexPage;
-
 import React from "react"
 import { graphql, navigate } from "gatsby"
 import { getUserLangKey } from "ptz-i18n"

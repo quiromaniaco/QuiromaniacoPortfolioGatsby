@@ -28,7 +28,7 @@ const ProjectCardStyle = styled.div`
 
 const ProjectsEN = ({ data }) => (
   <Layout>
-    <SEO title='Proyectos' />
+    <SEO lang='en' title='Projects | Manuel Quiroga' description='Here are some of my personal projects for you to see the kind of things I do' />
     <ProjectCardStyle>
       <Grid container alignContent={'flex-start'} direction={'row'}  >
           {data.allContentfulProjects.edges.map((node, key) => (

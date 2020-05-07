@@ -7,6 +7,7 @@ import Card from './Card'
 import { getUserLangKey } from "ptz-i18n"
 import Fade from '@material-ui/core/Fade';
 import { DiscussionEmbed } from "disqus-react"
+import { SEO } from 'components';
 
 
 
@@ -131,6 +132,7 @@ const BlogPost = ({ post }) => {
   if (langKey === 'es') {
     return (
       <Card>
+        <SEO lang='es' title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} />
         <BlogPostStyle>
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
@@ -149,6 +151,7 @@ const BlogPost = ({ post }) => {
   } else {
     return (
       <Card>
+        <SEO lang='en' title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} />
         <BlogPostStyle>
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 

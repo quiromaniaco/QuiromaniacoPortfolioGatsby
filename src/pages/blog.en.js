@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 const BlogPageES = ({ data }) => (
   <Layout>
-    <SEO title='Blog' />
+    <SEO lang='en' title='Blog | Manuel Quiroga' description='Personal Blog' />
     {/* <div style={{paddingTop: 30}}>
         <h1 style={{fontWeight: 800, fontSize: '2.5rem', lineHeight: 1.1, letterSpacing: '-0.01562em'}}>Mi punto de vista!</h1>
     </div> */}

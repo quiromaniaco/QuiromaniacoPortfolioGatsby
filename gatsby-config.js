@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Manuel Quiroga`,
-    description: `Personal portfolio of Manuel Quiroga`,
+    description: `Manuel Quiroga's personal portfolio and blog.`,
     author: `Manuel Quiroga`,
     langs: ["es", "en"],
     defaultLangKey: "es",
