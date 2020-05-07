@@ -31,6 +31,7 @@ export const pageQuery = graphql`
                 rawMarkdownBody
               }
             }
+            node_locale
             body {
                 childMarkdownRemark {
                   html

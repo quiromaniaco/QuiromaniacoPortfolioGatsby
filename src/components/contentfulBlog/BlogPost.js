@@ -126,13 +126,11 @@ const BlogPost = ({ post }) => {
     config: { identifier: post.slug },
   }
   
-  const langs = ['es', 'en']
-  const defaultLangKey = 'es'
-  let langKey = getUserLangKey(langs, defaultLangKey)
-  if (langKey === 'es') {
+
+  if (post.node_locale === 'es-AR') {
     return (
       <Card>
-        <SEO lang='es' title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} />
+        <SEO lang='es' url={`https://quiromaniaco.com/en/blog/${post.slug}`} title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} image={post.heroImage.fluid.src} />
         <BlogPostStyle>
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
@@ -151,7 +149,7 @@ const BlogPost = ({ post }) => {
   } else {
     return (
       <Card>
-        <SEO lang='en' title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} />
+        <SEO lang='en' url={`https://quiromaniaco.com/en/blog/${post.slug}`} title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} image={post.heroImage.fluid.src} />
         <BlogPostStyle>
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 

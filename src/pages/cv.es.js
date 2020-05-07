@@ -101,7 +101,7 @@ const MobileContainer = styled.div`
 
 const cvPage = () => (
   <Layout>
-    <SEO lang='es' title='Curriculum Vitae | Manuel Quiroga' description='Este es mi curriculum' />
+    <SEO lang='es' url={`https://quiromaniaco.com/es/cv`} title='Curriculum Vitae | Manuel Quiroga' description='Este es mi curriculum' />
       <MobileContainer>
         <Fade in timeout={500}>
           <Typography variant='h1' color='textPrimary'>

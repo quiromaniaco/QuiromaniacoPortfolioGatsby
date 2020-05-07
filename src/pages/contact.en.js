@@ -5,7 +5,7 @@ import { ContactEN } from 'containers';
 
 const AboutPage = () => (
   <Layout>
-    <SEO lang='en' title='Contact | Manuel Quiroga' description='Contact information of Manuel Quiroga' />
+    <SEO lang='en' url={`https://quiromaniaco.com/en/contact`} title='Contact | Manuel Quiroga' description='Contact information of Manuel Quiroga' />
     <ContactEN />
   </Layout>
 );

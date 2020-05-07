@@ -15,7 +15,7 @@ type Props = {
 
 const IndexPage = ({data, classes, width}: Props) => (
   <Layout>
-    <SEO lang='en' />
+    <SEO lang='en' url={`https://quiromaniaco.com`}/>
     <Grid container alignContent={'flex-start'} direction={'row'}  >
       <Grid alignContent={'stretch'} xs={12} sm={4}>
         <Img fluid={data.file.childImageSharp.fluid} style={{width: '100%', height:'100%'}}  /> 
