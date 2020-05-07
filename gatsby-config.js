@@ -28,6 +28,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-165862654-1",
+        head: true,
+        anonymize: true,
+        respectDNT: false,
+        pageTransitionDelay: 0,
+        
+      },
+    },
+    {
       resolve: 'gatsby-plugin-module-resolver',
       options: {
         root: './src',
