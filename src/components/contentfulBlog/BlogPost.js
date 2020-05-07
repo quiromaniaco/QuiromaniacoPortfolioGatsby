@@ -130,7 +130,7 @@ const BlogPost = ({ post }) => {
   if (post.node_locale === 'es-AR') {
     return (
       <Card>
-        <SEO lang='es' url={`https://quiromaniaco.com/en/blog/${post.slug}`} title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} image={post.heroImage.fluid.src} />
+        <SEO lang='es' url={`https://quiromaniaco.com/es/blog/${post.slug}`} title={post.title} description={post.description.childMarkdownRemark.rawMarkdownBody} image={post.heroImage.fluid.src} />
         <BlogPostStyle>
           <Fade in timeout={1000}> 
             <Img fluid={post.heroImage.fluid} style={{width: '100%', height:400}}  /> 
