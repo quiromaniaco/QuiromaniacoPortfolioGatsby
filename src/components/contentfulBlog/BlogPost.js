@@ -159,6 +159,7 @@ const BlogPost = ({ post }) => {
             </h1>
             <h3 style={{fontFamily: 'Source Code Pro'}}><span style={{fontWeight: 300}}>Published on </span>{post.publishDate}<span style={{fontWeight: 300}}> by </span>Manuel Quiroga</h3>
             <div className="body">{Content}</div>
+            <DiscussionEmbed {...disqusConfig} />
           </MobileContainer>
         </BlogPostStyle>
       </Card>
