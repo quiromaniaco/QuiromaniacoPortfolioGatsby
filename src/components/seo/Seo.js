@@ -67,7 +67,7 @@ function SEO({ description, lang, meta, title, image, url }: Props) {
     if (description) {
       finalDescription += " - Manuel Quiroga's portfolio and personal blog"
     } else {
-      finalDescription += " - Manuel Quiroga's portfolio and personal blog"
+      finalDescription += "Manuel Quiroga's portfolio and personal blog"
     }
 
     const metaDescription = finalDescription
