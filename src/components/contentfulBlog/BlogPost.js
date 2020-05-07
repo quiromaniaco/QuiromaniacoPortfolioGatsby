@@ -1,14 +1,15 @@
 import React from 'react'
 import Parser from 'html-react-parser'
 import styled from '@emotion/styled'
-
 import Img from "gatsby-image/withIEPolyfill"
-
 import { linkBlock } from './blocks'
 import Card from './Card'
-
 import { getUserLangKey } from "ptz-i18n"
 import Fade from '@material-ui/core/Fade';
+import { DiscussionEmbed } from "disqus-react"
+
+
+
 
 const BlogPostStyle = styled.div`
 letter-spacing: 0rem;
@@ -119,6 +120,10 @@ const BlogPost = ({ post }) => {
     },
   })
   
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: post.slug },
+  }
   
   const langs = ['es', 'en']
   const defaultLangKey = 'es'
@@ -132,10 +137,11 @@ const BlogPost = ({ post }) => {
           </Fade>
           <MobileContainer>
             <h1 className="title">
-              <a href={`/${post.slug}`}>{post.title}</a>
+              {post.title}
             </h1>
             <h3><span>Publicado el </span>{post.publishDate}<span> por </span>Manuel Quiroga</h3>
             <div className="body">{Content}</div>
+            <DiscussionEmbed {...disqusConfig} />
           </MobileContainer>
         </BlogPostStyle>
       </Card>
