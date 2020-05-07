@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-emotion',
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
