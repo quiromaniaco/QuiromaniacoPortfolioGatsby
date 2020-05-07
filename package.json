@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter",
+  "name": "quiromaniaco",
   "private": true,
-  "description": "Gatsby Starter",
+  "description": "Quiromaniaco Portfolio Template",
   "version": "1.2.0",
-  "author": "Polychronis Papadakis <polychronis.papadakis@gmail.com>",
+  "author": "Manuel Quiroga <mmquiroga10@gmail.com>",
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "@emotion/core": "^10.0.27",

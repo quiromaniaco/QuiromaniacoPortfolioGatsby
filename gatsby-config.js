@@ -53,11 +53,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter`,
-        short_name: `Gatsby Starter`,
+        name: `Manuel Quiroga`,
+        short_name: `Manu`,
         start_url: `/`,
-        background_color: `black`,
-        theme_color: `black`,
+        background_color: `white`,
+        theme_color: `white`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
