@@ -9,6 +9,7 @@ module.exports = {
     author: `Manuel Quiroga`,
     langs: ["es", "en"],
     defaultLangKey: "es",
+    siteUrl: `https://quiromaniaco.com`,
   },
   plugins: [
     `gatsby-plugin-flow`,
